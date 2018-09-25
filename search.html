@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<title>超阅游戏</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0, maximum-scale=1.0"/>
+<meta name="Keywords" content="超阅游戏" />
+<meta name="Description" content="" />
+<link rel="stylesheet" href="css/mgame.css">
+<script src="js/source.js" type="text/javascript"></script>
+<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+
+</head>
+
+<body class="bg">
+		<div class="wrap ">
+			<div class="main pt">
+				<div class="game_search">
+					<form id="search_form_id" action="">
+						<a href="javascript:history.go(-1);" class="go-back go-back_ff"></a>
+                        <input id="keyword" type="text"  name="keyword" oninput="onInput(event)">
+                        <a onclick="Search(this)"><span>搜索</span></a>
+                    </form>
+				</div>
+             <ul class="ulcost" id="ul_groom">
+                <h2>热门推荐</h2>
+				<a href="#"><li><div class="cost">传奇世界H5</div></li></a>
+				<a href="#"><li><div class="cost">决战沙城</div></li></a>
+				<a href="#"><li><div class="cost">暗影之怒</div></li></a>
+				<a href="#"><li><div class="cost">爬塔三国</div></li></a>
+				<a href="#"><li><div class="cost">屠龙争霸赛屠龙争霸赛屠龙争霸赛</div></li></a>
+				<a href="#"><li><div class="cost">暴走公主</div></li></a>
+				<a href="#"><li><div class="cost">疯狂光头强</div></li></a>
+				<a href="#"><li><div class="cost">决战沙城</div></li></a>
+				<a href="#"><li><div class="cost">逃离黑暗</div></li></a>
+			</ul>
+      <ul class="mgame_ul m_auto" id="ul_show">
+          <li>
+                <a href="#"><img src="img/1.jpg">
+                 <div> <strong>逃离黑暗</strong> <span><b>角色扮演</b><i>2984</i>人玩过</span> </div>
+                </a> 
+                <a class="link" href="#">开始游戏</a> 
+          </li>
+          <li>
+                <a href="#"><img src="img/1.jpg">
+                 <div> <strong>逃离黑暗</strong> <span><b>角色扮演</b><i>2984</i>人玩过</span> </div>
+                </a> 
+                <a class="link" href="#">开始游戏</a> 
+          </li>
+          <li>
+                <a href="#"><img src="img/1.jpg">
+                 <div> <strong>逃离黑暗</strong> <span><b>角色扮演</b><i>2984</i>人玩过</span> </div>
+                </a> 
+                <a class="link" href="#">开始游戏</a> 
+          </li>
+          <li>
+                <a href="#"><img src="img/1.jpg">
+                 <div> <strong>逃离黑暗</strong> <span><b>角色扮演</b><i>2984</i>人玩过</span> </div>
+                </a> 
+                <a class="link" href="#">开始游戏</a> 
+          </li>
+          <li>
+                <a href="#"><img src="img/1.jpg">
+                 <div> <strong>逃离黑暗</strong> <span><b>角色扮演</b><i>2984</i>人玩过</span> </div>
+                </a> 
+                <a class="link" href="#">开始游戏</a> 
+          </li>
+          <li>
+                <a href="#"><img src="img/1.jpg">
+                 <div> <strong>逃离黑暗</strong> <span><b>角色扮演</b><i>2984</i>人玩过</span> </div>
+                </a> 
+                <a class="link" href="#">开始游戏</a> 
+          </li>                              
+    </ul>
+				
+			</div>
+			
+		</div>
+	
+
+
+<script>
+$('#ul_show').hide();
+$("input:text").bind("input propertychange",function(){
+if($('#keyword').val()==""){$('#ul_groom').show();$('#ul_show').hide();}else{$('#ul_show').show();$('#ul_groom').hide()}
+});
+
+</script>
+	
+
+</body>
+</html>
